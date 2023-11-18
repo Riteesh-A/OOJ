@@ -7,10 +7,20 @@ public class OOPS {
    public static void main(String args[]) {
       Scanner scan = new Scanner(System.in);
 
-      // System.out.println("Options:\n1. Hire Teacher\n2. Create Lab\n3. Enroll
-      // Student\n4. Admit Student");
-      // String option = scan.nextLine();
+      System.out.println("Options:\n1. Hire Teacher\n2. Create Lab\n3. Enroll Student\n4. Admit Student");
+      String option = scan.nextLine();
 
+      switch (option) {
+         case "1":
+            System.out.println("Enter teacher name, age and subject:");
+            String teachName = scan.nextLine();
+            int teachAge = scan.nextInt();
+            String subj = scan.nextLine();
+            break;
+
+         default:
+            break;
+      }
       System.out.println("Enter teacher name, age and subject:");
       String teachName = scan.nextLine();
       int teachAge = scan.nextInt();
